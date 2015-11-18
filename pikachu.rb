@@ -4,12 +4,13 @@ p 'Programm is run'
 
 sleep 1
 
-for i in 1..3
-  sleep 1
-  i -= 1
-  p "Please, wait #{i} second"
+4.times do |t|
+  p "Processing #{t}..."
+  sleep 0.5
 end
 
 pikachu = Pokemon.new
 
 pikachu.say_info
+
+pikachu.sleep?

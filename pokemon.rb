@@ -1,7 +1,7 @@
 class Pokemon
 
-  def initialize
-    @name = 'Pikachu'
+  def initialize name
+    @name = name 
     p 'Please, print age your Pokemon'
     @years = gets.chomp.to_i
   end
